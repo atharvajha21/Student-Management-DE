@@ -1,0 +1,9 @@
+BEGIN
+INSERT 0 1
+ student_id |          name          |          email           
+------------+------------------------+--------------------------
+         13 | Temporary Test Student | temp.student@example.edu
+(1 row)
+
+DELETE 1
+ROLLBACK

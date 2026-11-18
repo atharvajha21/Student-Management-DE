@@ -1,0 +1,14 @@
+ student_id |      name       |            email            |       department       
+------------+-----------------+-----------------------------+------------------------
+          1 | Aarav Sharma    | aarav.sharma@example.edu    | Computer Science
+          4 | Ananya Gupta    | ananya.gupta@example.edu    | Electronics
+          2 | Diya Patel      | diya.patel@example.edu      | Information Technology
+          5 | Kabir Mehta     | kabir.mehta@example.edu     | Mechanical
+          8 | Priya Nair      | priya.nair@example.edu      | Information Technology
+          3 | Rohan Iyer      | rohan.iyer@example.edu      | Computer Science
+          9 | Siddharth Verma | siddharth.verma@example.edu | Mechanical
+          6 | Sneha Rao       | sneha.rao@example.edu       | Computer Science
+         10 | Tanvi Kulkarni  | tanvi.kulkarni@example.edu  | Civil
+          7 | Vikram Malhotra | vikram.malhotra@example.edu | Electronics
+(10 rows)
+

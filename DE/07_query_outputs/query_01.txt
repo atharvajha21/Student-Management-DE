@@ -1,0 +1,8 @@
+BEGIN
+ student_id |      name      |           email            |    department    |         created_at         
+------------+----------------+----------------------------+------------------+----------------------------
+         12 | Kavya Deshmukh | kavya.deshmukh@example.edu | Computer Science | 2026-11-18 18:50:52.269543
+(1 row)
+
+INSERT 0 1
+ROLLBACK

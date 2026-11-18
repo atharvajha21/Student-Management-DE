@@ -1,0 +1,7 @@
+ student_id |     name     |          email           |    department    
+------------+--------------+--------------------------+------------------
+          1 | Aarav Sharma | aarav.sharma@example.edu | Computer Science
+          3 | Rohan Iyer   | rohan.iyer@example.edu   | Computer Science
+          6 | Sneha Rao    | sneha.rao@example.edu    | Computer Science
+(3 rows)
+

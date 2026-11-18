@@ -1,0 +1,9 @@
+ course_id |          course_name           | course_code | credits | enrolled_students_count 
+-----------+--------------------------------+-------------+---------+-------------------------
+         1 | Database Engineering           | CS301       |       4 |                       5
+         2 | Data Structures & Algorithms   | CS201       |       4 |                       3
+         3 | Web Application Development    | IT302       |       3 |                       3
+         4 | Digital Electronics            | EC204       |       3 |                       2
+         5 | Thermodynamics & Heat Transfer | ME201       |       4 |                       1
+(5 rows)
+

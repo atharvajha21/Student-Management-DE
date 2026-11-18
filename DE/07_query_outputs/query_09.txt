@@ -1,0 +1,8 @@
+ course_id |         course_name          | course_code | enrolled_count 
+-----------+------------------------------+-------------+----------------
+         1 | Database Engineering         | CS301       |              5
+         2 | Data Structures & Algorithms | CS201       |              3
+         3 | Web Application Development  | IT302       |              3
+         4 | Digital Electronics          | EC204       |              2
+(4 rows)
+

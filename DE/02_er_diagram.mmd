@@ -1,0 +1,34 @@
+erDiagram
+    STUDENTS {
+        int student_id PK "SERIAL, Primary Key"
+        varchar name "NOT NULL"
+        varchar email UK "UNIQUE, NOT NULL"
+        varchar phone "NULLABLE"
+        varchar department "NOT NULL"
+        timestamp created_at "DEFAULT CURRENT_TIMESTAMP"
+    }
+
+    COURSES {
+        int course_id PK "SERIAL, Primary Key"
+        varchar course_name "NOT NULL"
+        varchar course_code UK "UNIQUE, NOT NULL"
+        int credits "CHECK (credits BETWEEN 1 AND 6)"
+    }
+
+    ENROLLMENTS {
+        int enrollment_id PK "SERIAL, Primary Key"
+        int student_id FK "REFERENCES students(student_id)"
+        int course_id FK "REFERENCES courses(course_id)"
+        date enrollment_date "DEFAULT CURRENT_DATE"
+    }
+
+    ATTENDANCE {
+        int attendance_id PK "SERIAL, Primary Key"
+        int enrollment_id FK "REFERENCES enrollments(enrollment_id)"
+        date attendance_date "NOT NULL"
+        varchar status "CHECK IN ('Present', 'Absent')"
+    }
+
+    STUDENTS ||--o{ ENROLLMENTS : "has (1:N)"
+    COURSES ||--o{ ENROLLMENTS : "contains (1:N)"
+    ENROLLMENTS ||--o{ ATTENDANCE : "logged_for (1:N)"

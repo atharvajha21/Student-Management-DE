@@ -1,0 +1,8 @@
+BEGIN
+ student_id |     name     |          email           |   phone    |  department  
+------------+--------------+--------------------------+------------+--------------
+          1 | Aarav Sharma | aarav.sharma@example.edu | 9999988888 | Data Science
+(1 row)
+
+UPDATE 1
+ROLLBACK

@@ -1,0 +1,21 @@
+ student_id |  student_name   |       department       |  course_code  |          course_name           | credits 
+------------+-----------------+------------------------+---------------+--------------------------------+---------
+          1 | Aarav Sharma    | Computer Science       | CS201         | Data Structures & Algorithms   | 4
+          1 | Aarav Sharma    | Computer Science       | CS301         | Database Engineering           | 4
+          1 | Aarav Sharma    | Computer Science       | IT302         | Web Application Development    | 3
+          2 | Diya Patel      | Information Technology | CS301         | Database Engineering           | 4
+          2 | Diya Patel      | Information Technology | IT302         | Web Application Development    | 3
+          3 | Rohan Iyer      | Computer Science       | CS201         | Data Structures & Algorithms   | 4
+          3 | Rohan Iyer      | Computer Science       | CS301         | Database Engineering           | 4
+          3 | Rohan Iyer      | Computer Science       | IT302         | Web Application Development    | 3
+          4 | Ananya Gupta    | Electronics            | CS301         | Database Engineering           | 4
+          4 | Ananya Gupta    | Electronics            | EC204         | Digital Electronics            | 3
+          5 | Kabir Mehta     | Mechanical             | ME201         | Thermodynamics & Heat Transfer | 4
+          6 | Sneha Rao       | Computer Science       | CS201         | Data Structures & Algorithms   | 4
+          6 | Sneha Rao       | Computer Science       | CS301         | Database Engineering           | 4
+          7 | Vikram Malhotra | Electronics            | EC204         | Digital Electronics            | 3
+          8 | Priya Nair      | Information Technology | NO ENROLLMENT | No Course Enrolled             | 0
+          9 | Siddharth Verma | Mechanical             | NO ENROLLMENT | No Course Enrolled             | 0
+         10 | Tanvi Kulkarni  | Civil                  | NO ENROLLMENT | No Course Enrolled             | 0
+(17 rows)
+

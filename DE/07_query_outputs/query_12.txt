@@ -1,0 +1,6 @@
+ student_id |     name     |    department    | enrolled_courses_count 
+------------+--------------+------------------+------------------------
+          1 | Aarav Sharma | Computer Science |                      3
+          3 | Rohan Iyer   | Computer Science |                      3
+(2 rows)
+

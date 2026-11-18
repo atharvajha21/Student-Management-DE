@@ -1,0 +1,54 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Student {
+  student_id  Int          @id @default(autoincrement())
+  name        String       @db.VarChar(100)
+  email       String       @unique @db.VarChar(150)
+  phone       String?      @db.VarChar(15)
+  department  String       @db.VarChar(100)
+  created_at  DateTime     @default(now()) @db.Timestamp(6)
+  enrollments Enrollment[]
+
+  @@map("students")
+}
+
+model Course {
+  course_id   Int          @id @default(autoincrement())
+  course_name String       @db.VarChar(100)
+  course_code String       @unique @db.VarChar(20)
+  credits     Int
+  enrollments Enrollment[]
+
+  @@map("courses")
+}
+
+model Enrollment {
+  enrollment_id   Int          @id @default(autoincrement())
+  student_id      Int
+  course_id       Int
+  enrollment_date DateTime     @default(now()) @db.Date
+  student         Student      @relation(fields: [student_id], references: [student_id], onDelete: Cascade)
+  course          Course       @relation(fields: [course_id], references: [course_id], onDelete: Cascade)
+  attendances     Attendance[]
+
+  @@unique([student_id, course_id])
+  @@map("enrollments")
+}
+
+model Attendance {
+  attendance_id   Int        @id @default(autoincrement())
+  enrollment_id   Int
+  attendance_date DateTime   @db.Date
+  status          String     @db.VarChar(10)
+  enrollment      Enrollment @relation(fields: [enrollment_id], references: [enrollment_id], onDelete: Cascade)
+
+  @@unique([enrollment_id, attendance_date])
+  @@map("attendance")
+}
